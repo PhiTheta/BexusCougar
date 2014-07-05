@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="854.0" prefWidth="761.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Balloon">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="584.0" prefWidth="769.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Start" />
+                  <Button layoutX="80.0" layoutY="14.0" mnemonicParsing="false" text="Reset" />
+                  <Button layoutX="157.0" layoutY="14.0" mnemonicParsing="false" text="Stop" />
+                  <Button layoutX="14.0" layoutY="61.0" mnemonicParsing="false" text="Link Setup" />
+                  <Label layoutX="115.0" layoutY="66.0" text="Link Setup Status" />
+                  <RadioButton layoutX="230.0" layoutY="65.0" mnemonicParsing="false" />
+                  <RadioButton layoutX="262.0" layoutY="66.0" mnemonicParsing="false" />
+                  <RadioButton layoutX="294.0" layoutY="66.0" mnemonicParsing="false" />
+                  <Label contentDisplay="RIGHT" layoutX="86.0" layoutY="95.0" text="Time :" />
+                  <Label contentDisplay="RIGHT" layoutX="136.0" layoutY="95.0" text="10:10:00 " />
+                  <Label contentDisplay="RIGHT" layoutX="14.0" layoutY="118.0" text="Link Loss (Rover) :" />
+                  <Label contentDisplay="RIGHT" layoutX="31.0" layoutY="144.0" text="Ethernet Status:" />
+                  <Label contentDisplay="RIGHT" layoutX="77.0" layoutY="176.0" text="Altitude :" />
+                  <Label contentDisplay="RIGHT" layoutX="147.0" layoutY="176.0" text="in Km" />
+                  <Label contentDisplay="RIGHT" layoutX="51.0" layoutY="237.0" text="Temperature :" />
+                  <RadioButton layoutX="142.0" layoutY="117.0" mnemonicParsing="false" />
+                  <RadioButton layoutX="206.0" layoutY="118.0" mnemonicParsing="false" />
+                  <RadioButton layoutX="174.0" layoutY="118.0" mnemonicParsing="false" />
+                  <RadioButton layoutX="206.0" layoutY="144.0" mnemonicParsing="false" />
+                  <RadioButton layoutX="142.0" layoutY="143.0" mnemonicParsing="false" />
+                  <RadioButton layoutX="174.0" layoutY="144.0" mnemonicParsing="false" />
+                  <Label contentDisplay="RIGHT" layoutX="147.0" layoutY="237.0" text="in Degree" />
+                  <Label contentDisplay="RIGHT" layoutX="149.0" layoutY="260.0" text="\%" />
+                  <Label contentDisplay="RIGHT" layoutX="47.0" layoutY="260.0" text="Bit Error Rate :" />
+                  <Label contentDisplay="RIGHT" layoutX="153.0" layoutY="381.0" text="dBmW" />
+                  <Label contentDisplay="RIGHT" layoutX="39.0" layoutY="381.0" text="Signal Strength :" />
+                  <Label contentDisplay="RIGHT" layoutX="42.0" layoutY="404.0" text="Command ACK :" />
+                  <Label contentDisplay="RIGHT" layoutX="154.0" layoutY="404.0" text="CMD_X_0/1" />
+                  <Label contentDisplay="RIGHT" layoutX="51.0" layoutY="425.0" text="Battery Status :" />
+                  <Label contentDisplay="RIGHT" layoutX="153.0" layoutY="331.0" text="kbps" />
+                  <Label contentDisplay="RIGHT" layoutX="72.0" layoutY="331.0" text="Data Rate :" />
+                  <ProgressBar layoutX="154.0" layoutY="423.0" prefHeight="20.0" prefWidth="100.0" progress="0.69" />
+                  <LineChart layoutX="318.0" layoutY="12.0" prefHeight="180.0" prefWidth="410.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="222.0" layoutX="353.0" layoutY="191.0" stroke="BLACK" strokeType="INSIDE" width="373.0" />
+                  <Button layoutX="218.0" layoutY="14.0" mnemonicParsing="false" text="Terminate Link" />
+                  <Label layoutX="471.0" layoutY="312.0" text="Google Maps" />
+                  <Label layoutX="454.0" layoutY="14.0" text="IMU Unit Graph" />
+                  <Label contentDisplay="RIGHT" layoutX="23.0" layoutY="286.0" text="Packet Error Rate :" />
+                  <Label contentDisplay="RIGHT" layoutX="153.0" layoutY="286.0" text="\%" />
+                  <Label layoutX="72.0" layoutY="309.0" text="FEC Mode :" />
+                  <Label layoutX="67.0" layoutY="357.0" text="Packet Size :" />
+                  <Label layoutX="152.0" layoutY="357.0" text="Bytes" />
+                  <Label contentDisplay="RIGHT" layoutX="51.0" layoutY="198.0" text="Down Range :" />
+                  <Label contentDisplay="RIGHT" layoutX="149.0" layoutY="198.0" text="in Km" />
+                  <Label contentDisplay="RIGHT" layoutX="150.0" layoutY="216.0" text="degrees" />
+                  <Label contentDisplay="RIGHT" layoutX="93.0" layoutY="216.0" text="Angle :" />
+                  <LineChart layoutX="34.0" layoutY="486.0" prefHeight="200.0" prefWidth="348.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </LineChart>
+                  <Label layoutX="168.0" layoutY="493.0" text="Temperature" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Rover">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="388.0" prefWidth="694.0">
+               <children>
+                  <Button layoutX="69.0" layoutY="28.0" mnemonicParsing="false" text="Forward" />
+                  <Button layoutX="14.0" layoutY="67.0" mnemonicParsing="false" text="Left" />
+                  <Button layoutX="152.0" layoutY="67.0" mnemonicParsing="false" text="Right" />
+                  <Button layoutX="65.0" layoutY="111.0" mnemonicParsing="false" text="Backward" />
+                  <Button layoutX="108.0" layoutY="171.0" mnemonicParsing="false" text="Turn Rover" />
+                  <Button layoutX="108.0" layoutY="217.0" mnemonicParsing="false" text="Set Speed" />
+                  <Button layoutX="108.0" layoutY="260.0" mnemonicParsing="false" text="Command" />
+                  <Slider layoutX="14.0" layoutY="222.0" prefHeight="16.0" prefWidth="83.0" />
+                  <ComboBox layoutX="14.0" layoutY="260.0" prefHeight="26.0" prefWidth="90.0" promptText="Select " />
+                  <ComboBox layoutX="14.0" layoutY="171.0" prefHeight="26.0" prefWidth="90.0" promptText="Angle " />
+                  <Label layoutX="213.0" layoutY="176.0" text="Current Angle" />
+                  <Label layoutX="213.0" layoutY="222.0" text="Current Speed" />
+                  <Label layoutX="213.0" layoutY="265.0" text="Current Command" />
+                  <Button layoutX="78.0" layoutY="67.0" mnemonicParsing="false" text="Reset" />
+                  <Label layoutX="531.0" layoutY="20.0" text="Arm Movement" />
+                  <Button layoutX="541.0" layoutY="80.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="97.0" text="Roll Arm L" />
+                  <Button layoutX="540.0" layoutY="118.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Yaw Arm L" />
+                  <Button layoutX="540.0" layoutY="158.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Pitch Arm L" />
+                  <Button layoutX="540.0" layoutY="197.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="Roll Arm U" />
+                  <Button layoutX="539.0" layoutY="238.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="101.0" text="Yaw Arm U" />
+                  <Button layoutX="538.0" layoutY="281.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" text="Pitch Arm U" />
+                  <Button layoutX="537.0" layoutY="322.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="Expand Tool" />
+                  <Button layoutX="537.0" layoutY="362.0" mnemonicParsing="false" text="Contract Tool" />
+                  <Label layoutX="649.0" layoutY="85.0" text="Current Status" />
+                  <Label layoutX="649.0" layoutY="123.0" text="Current Status" />
+                  <Label layoutX="649.0" layoutY="163.0" text="Current Status" />
+                  <Label layoutX="649.0" layoutY="202.0" text="Current Status" />
+                  <Label layoutX="649.0" layoutY="243.0" text="Current Status" />
+                  <Label layoutX="649.0" layoutY="286.0" text="Current Status" />
+                  <Label layoutX="649.0" layoutY="327.0" text="Current Status" />
+                  <Label layoutX="655.0" layoutY="367.0" text="Current Status" />
+                  <ComboBox layoutX="431.0" layoutY="80.0" prefHeight="26.0" prefWidth="90.0" promptText="Angle " />
+                  <ComboBox layoutX="431.0" layoutY="118.0" prefHeight="26.0" prefWidth="90.0" promptText="Angle " />
+                  <ComboBox layoutX="431.0" layoutY="158.0" prefHeight="26.0" prefWidth="90.0" promptText="Angle " />
+                  <ComboBox layoutX="431.0" layoutY="197.0" prefHeight="26.0" prefWidth="90.0" promptText="Angle " />
+                  <ComboBox layoutX="431.0" layoutY="238.0" prefHeight="26.0" prefWidth="90.0" promptText="Angle " />
+                  <ComboBox layoutX="431.0" layoutY="281.0" prefHeight="26.0" prefWidth="90.0" promptText="Angle " />
+                  <ComboBox layoutX="431.0" layoutY="322.0" prefHeight="26.0" prefWidth="90.0" promptText="cm" />
+                  <ComboBox layoutX="431.0" layoutY="362.0" prefHeight="26.0" prefWidth="90.0" promptText="cm " />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Downloads/24-besancon_80.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="80.0" layoutY="299.0" text="Picture from Rover" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
